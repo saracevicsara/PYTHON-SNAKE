@@ -28,7 +28,16 @@ food.color("red")
 food.penup()
 food.goto(0,100)
 
+segment=[]
+# pen=turtle.Turtle()
+# pen.shape("square")
+# pen.color("grey")
+# pen.penup()
+# pen.hideturtle()
+# pen.goto(0,260)
+# pen.write("score:0  highscore:0")
 #function
+
 def go_up():
     head.direction="up"
 def go_down():
@@ -69,6 +78,13 @@ while True:
         x=random.randint(-290,200)
         y=random.randint(-290,200)
         food.goto(x,y)
+        
+        new_segment=turtle.Turtle()
+        new_segment.speed(0)
+        new_segment.shape("square")
+        new_segment.color("grey")
+        new_segment.penup()
+        segment.append(new_segment)
     move()
 
     time.sleep(delay)

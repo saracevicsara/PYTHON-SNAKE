@@ -97,7 +97,7 @@ while True:
         new_segment.shape("square")
         new_segment.color("grey")
         new_segment.penup()
-        segment.append(new_segment)
+        segments.append(new_segment)
      
     for index in range(len(segments)-1,0,-1):
         x=segments[index-1].xcor()
@@ -111,6 +111,13 @@ while True:
 
 
     move()
+
+
+    # for segment in segments:
+    #     if segment.distance(head)<20:
+    #         time.sleep(1)
+    #         head.goto(0,0)
+    #         head.direction="stop"
 
     time.sleep(delay)
 

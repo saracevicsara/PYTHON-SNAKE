@@ -30,13 +30,13 @@ food.goto(0,100)
 
 segment=[]
 segments=[]
-# pen=turtle.Turtle()
-# pen.shape("square")
-# pen.color("grey")
-# pen.penup()
-# pen.hideturtle()
-# pen.goto(0,260)
-# pen.write("score:0  highscore:0")
+pen=turtle.Turtle()
+pen.shape("square")
+pen.color("grey")
+pen.penup()
+pen.hideturtle()
+pen.goto(0,260)
+pen.write("score:0  highscore:0")
 #function
 
 def go_up():
